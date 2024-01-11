@@ -1,0 +1,67 @@
+<pizza-barra></pizza-barra>
+<!-- <mat-card>
+    <div class="col-md-4 p-4" *ngFor="let pizzas of pizza">
+        <mat-card-content fxLayout="column" fxLayoutAlign="center center">
+            <img [src]="pizzas.image">
+            <mat-card-title>{{pizzas.name}}</mat-card-title>
+            <mat-card-subtitle>{{pizzas.ingredients}}</mat-card-subtitle>
+            <mat-card-subtitle>{{pizzas.price}}</mat-card-subtitle>
+        </mat-card-content>
+    </div>
+</mat-card> -->
+
+<!-- <pizza-container>
+    <perfect-scrollbar class="heightMaxScrollbar">
+        <pizza-table [data]="data" [metaDataColumns]="metaDataColumns">
+            <ng-container matColumnDef="actions">
+                <th mat-header-cell *matHeaderCellDef></th>
+                <td mat-cell *matCellDef="let row" class="alignButton">
+                </td>
+            </ng-container>
+        </pizza-table>
+    </perfect-scrollbar>
+</pizza-container> -->
+<div class="contenido-textos">
+    <h3 fxLayoutAlign="space-between center" class="titulo">Menú Pizzas <span>></span></h3>
+</div>
+<div class="contenido-textos">
+    <h3 fxLayoutAlign="space-between center" class="titulos">Filtros ❯<span>></span></h3>
+</div>
+<div fxLayout fxLayoutAlign="space-around center" class="uno">
+    <mat-form-field appearance="outline" fxLayoutAlign="start center">
+        <mat-label>Pizza</mat-label>
+        <input matInput type="search" placeholder="Ingrese Pizza" [(ngModel)]="search">
+        <button class="search" mat-raised-button color="accent" (click)="loadMenuPizza()" matTooltip="BUSCAR" matSuffix
+            fxLayoutAlign="center center">
+            <mat-icon>search</mat-icon>
+        </button>
+    </mat-form-field>
+    <mat-form-field appearance="outline" fxLayoutAlign="start center">
+        <mat-label>Ingredientes</mat-label>
+        <input matInput type="search" placeholder="Ingrese Ingredientes" [(ngModel)]="searchI">
+        <button class="search" mat-raised-button color="accent" (click)="loadIngredientes()" matTooltip="BUSCAR"
+            matSuffix fxLayoutAlign="center center">
+            <mat-icon>search</mat-icon>
+        </button>
+    </mat-form-field>
+    <div fxLayout class="dos">
+        <mat-label>Precio:⠀⠀</mat-label>
+        <input matInput type="number" placeholder="Min" [(ngModel)]="searchMin">
+        <input matInput type="number" placeholder="Max" [(ngModel)]="searchMax">
+        <button class="search" mat-raised-button color="accent" (click)="loadPrecios()" matTooltip="BUSCAR" matSuffix
+            fxLayoutAlign="center center">
+            <mat-icon>search</mat-icon>
+        </button>
+    </div>
+</div>
+<perfect-scrollbar>
+    <mat-grid-list cols="4" rowHeight="275px">
+        <div *ngFor="let pizza of records">
+            <mat-grid-tile>
+                <pizza-card [image]="pizza.image" [name]="pizza.name" [ingredients]="pizza.ingredients"
+                    [price]="pizza.price">
+                </pizza-card>
+            </mat-grid-tile>
+        </div>
+    </mat-grid-list>
+</perfect-scrollbar>

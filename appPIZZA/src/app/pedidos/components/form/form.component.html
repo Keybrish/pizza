@@ -1,0 +1,33 @@
+<mat-toolbar fxLayout fxLayoutAlign="space-between center">
+    <h3>{{ title }}</h3>
+    <button mat-icon-button mat-dialog-close>
+        <mat-icon>close</mat-icon>
+    </button>
+</mat-toolbar>
+<mat-dialog-content>
+    <form fxLayout="column" [formGroup]="group">
+        <!-- <mat-form-field appearance="outline">
+            <mat-label>Pizza</mat-label>
+            <input matInput type="text" placeholder="Ingrese Pizza" formControlName="name" required>
+            <mat-icon matSuffix>local_pizza</mat-icon>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Precio</mat-label>
+            <input matInput type="number" placeholder="Ingrese Precio" formControlName="price" required>
+            <mat-icon matSuffix>attach_money</mat-icon>
+        </mat-form-field> -->
+        <mat-form-field appearance="outline">
+            <mat-label>Estado</mat-label>
+            <input matInput type="text" formControlName="status" readonly>
+            <mat-icon matSuffix>local_pizza</mat-icon>
+        </mat-form-field>
+        <div fxLayout fxLayoutAlign="space-between stretch" fxLayoutGap="10px">
+            <button mat-raised-button color="primary" type="button" [disabled]="group.invalid" (click)="save()"> 
+                Entregado
+            </button>
+            <button mat-stroked-button color="basic" type="button" mat-dialog-close>
+                Cancelar
+            </button>
+        </div>
+    </form>
+</mat-dialog-content>

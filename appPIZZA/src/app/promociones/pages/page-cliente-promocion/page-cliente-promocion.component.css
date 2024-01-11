@@ -1,0 +1,27 @@
+img {
+    width: 32px;
+    height: 32px;
+    margin: auto 50px;
+}
+
+mat-toolbar {
+    /* background-color: #a4a4a4 !important; */
+    background-color: #fafafa !important;
+    height: 50px;
+}
+
+h2 {
+    font-size: 25px;
+    color: #636363 !important;
+}
+
+mat-icon {
+    color: #636363;
+}
+
+.op mat-icon,
+h2, p {
+    margin: auto 10px;
+    display: inline-flex;
+    margin-top: 20px;
+}

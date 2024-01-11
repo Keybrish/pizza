@@ -1,0 +1,37 @@
+img {
+    width: 32px;
+    height: 32px;
+    margin: auto 50px;
+}
+
+mat-toolbar {
+    /* background-color: #a4a4a4 !important; */
+    background-color: #fafafa !important;
+    height: 50px;
+}
+
+h2 {
+    font-size: 25px;
+    color: #636363 !important;
+}
+
+mat-icon {
+    color: #636363;
+}
+
+.op mat-icon,
+h2, p {
+    margin: auto 10px;
+    display: inline-flex;
+    margin-top: 20px;
+}
+
+/* .lg {
+    margin-left: 50px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 20px;
+    border-top: 1px solid;
+    border-image: linear-gradient(to right, #636363 0%, #ffffff 100%) 1;
+    border-left: 1px solid #636363;
+} */

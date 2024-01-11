@@ -1,0 +1,110 @@
+/* .container {
+    width: 100%;
+    height: 87.4vh;
+    background: -webkit-linear-gradient(to right, #605c3c9e, #3c3b3fa2), url(../../../../assets/pizza.jpg);
+    background: linear-gradient(to right, #605c3c9e, #3c3b3fa2), url(../../../../assets/pizza.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.info{
+    padding: 150px;
+    background: linear-gradient(rgba(255, 0, 0, 0) 10%, rgb(255, 255, 255));
+}
+
+.info h2 {
+    font-size: 42px;
+    line-height: 46px;
+    text-align: center;
+}
+
+.info img {
+    width: 100%;
+}
+
+.info button{
+    width: 50%;
+    border-radius: 50px;
+    margin: 10px auto;
+}
+
+.login {
+    border-start-start-radius: 100px;
+    background: rgb(239, 239, 239);
+    margin-top: 30px;
+}
+
+.black{
+    width: 10%;
+    background: linear-gradient(rgba(255, 0, 0, 0) 5%, #00000097);
+}
+
+.pizzas img{
+    width: 20%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    border-radius: 25px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    filter: opacity(75%);
+    transform: scale(1);
+    transition: transform .5s;
+}
+
+.pizzas img:hover{
+    transform: scale(0.7);
+} */
+
+.container {
+    width: 100%;
+    height: 87.4vh;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.login {
+    /* border-start-start-radius: 100px; */
+    /* margin-top: 30px; */
+    /* box-shadow: -3px -3px 5px rgba(0, 0, 0, 0.053); */
+    height: 85%;
+    /* background-color: #f3f3f3; */
+}
+
+.contenido-textos p {
+    padding: 0px 0px 30px 0px;
+    font-weight: 300;
+    text-align: justify;
+    width: 75%;
+}
+
+.titulo {
+    color: #3c3b3f;
+    font-size: 30px;
+    text-align: left;
+}
+
+.image-about-us {
+    width: 65%;
+}
+
+.sp {
+    width: 70%;
+    text-align: center;
+}
+
+.bajo button{
+    width: 150px;
+    margin-top: 10px;
+}
+
+.bajo p{
+    font-weight: 300;
+    text-align: center;
+    width: 495px;
+    font-size: 12px;
+    line-height: 15px;
+    margin-top: 25px;
+}

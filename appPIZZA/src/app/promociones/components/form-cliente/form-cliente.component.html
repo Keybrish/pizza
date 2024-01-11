@@ -1,0 +1,23 @@
+<mat-toolbar fxLayout fxLayoutAlign="space-between center">
+    <h3>{{ title }}</h3>
+    <button mat-icon-button mat-dialog-close>
+        <mat-icon>close</mat-icon>
+    </button>
+</mat-toolbar>
+<mat-dialog-content>
+    <form fxLayout="column" [formGroup]="group">
+        <mat-form-field appearance="outline">
+            <mat-label>Dirreción</mat-label>
+            <input matInput type="text" formControlName="address">
+            <mat-icon matSuffix>location_on</mat-icon>
+        </mat-form-field>
+        <div fxLayout fxLayoutAlign="space-between stretch" fxLayoutGap="10px">
+            <button mat-raised-button color="primary" type="button" [disabled]="group.invalid" (click)="save()"> 
+                Comprar
+            </button>
+            <button mat-stroked-button color="basic" type="button" mat-dialog-close>
+                Cancelar
+            </button>
+        </div>
+    </form>
+</mat-dialog-content>

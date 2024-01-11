@@ -1,0 +1,14 @@
+img{
+    width: 165px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.uno {
+    width: 200px;
+    height: 225px;
+    margin: 0 0;
+}

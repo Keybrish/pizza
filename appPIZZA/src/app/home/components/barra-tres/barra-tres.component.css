@@ -1,0 +1,84 @@
+.profile{
+    height: 100%;
+}
+
+mat-toolbar img{
+    width: 40px;
+    max-height: 40px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+}
+
+mat-toolbar{
+    height: 50px;
+    width: 100%;
+    /* background: #416d0d; */
+    border-bottom: 1px solid #6c9336;
+}
+
+.logo span{
+    letter-spacing: 15px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.logo{
+    margin-left: 50px;
+}
+
+.hi{
+    margin-right: 30px;
+}
+
+.mt2{
+    width: 100%;
+    /* background: #e4e4e4; */
+    height: 40px;
+    border-bottom: 0px;
+}
+
+.mt2 a{
+    margin-right: 75px;
+    text-decoration: none;
+    color: rgb(107, 107, 107);
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.comer{
+    margin: auto;
+    margin-right: 75px;
+}
+
+.mt2 a:hover{
+    color: #1d1d1d;
+}
+
+.scar{
+    margin: auto;
+    margin-right: 75px;
+}
+
+.hi span{
+    color: rgb(0, 0, 0);
+}
+
+.white{
+    color: rgb(0, 0, 0);
+}
+
+.descrp{
+    font-size: 10px;
+    letter-spacing: 15px;
+    margin-left: 75px;
+}
+
+.opciones span:hover{
+    color: black;
+    font-weight: 500;
+}
+
+.opciones span{
+    font-size: 14px;
+    font-weight: 100;
+}

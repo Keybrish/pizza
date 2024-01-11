@@ -1,0 +1,27 @@
+<mat-toolbar fxLayout fxLayoutAlign="space-between center">
+    <div class="logo">
+        <span><b>MANGIONA</b></span>
+        <mat-icon>local_pizza</mat-icon>
+    </div>
+    <div class="op">
+        <button mat-stroked-button color="primary">Registrarse</button>
+        <a href="login">
+            <button mat-raised-button color="primary" onclick="">Iniciar Sesión</button>
+        </a>
+    </div>
+</mat-toolbar>
+<mat-toolbar class="mt2" fxLayoutAlign="space-between center">
+    <span class="descrp">TROZOS PERFECTOS</span>
+    <div class="op" fxLayout>
+        <mat-icon class="comer" matSuffix>restaurant_menu</mat-icon>
+        <div class="opciones">
+            <a href="#">Inicio</a>
+            <a href="#about">Acerca De</a>
+            <a href="#menu">Populares</a>
+            <a [routerLink]="['/pizzas']">Menú</a>
+            <a [routerLink]="['/promocion']">Promociones</a>
+            <a href="#contacto">Contactos</a>
+            <mat-icon class="scar" matSuffix>add_shopping_cart</mat-icon>
+        </div>
+    </div>
+</mat-toolbar>
